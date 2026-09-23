@@ -1,0 +1,14 @@
+{
+  "name": "formly-server",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Formly multi-user authentication and private profile API",
+  "main": "server.js",
+  "scripts": {"start":"node server.js","dev":"node server.js"},
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
