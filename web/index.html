@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="theme-color" content="#080a12" />
-    <title>Formly — AI Form Agent</title>
+    <title>Formly — AI Form Agent | Agentic Autofill</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +16,7 @@
   <body>
     <section id="authScreen" class="auth-screen">
       <div class="auth-shell">
-        <div class="auth-brand"><div class="brand-mark">F</div><div><strong>Formly</strong><span>PRIVATE AUTOMATION</span></div></div>
+        <div class="auth-brand"><div class="brand-mark">F</div><div><strong>Formly</strong><span>AI FORM AGENT</span></div></div>
         <div class="auth-card glass-panel">
           <div class="auth-kicker">SECURE AI PROFILE MEMORY</div>
           <h1 id="authTitle">Welcome back</h1>
@@ -41,9 +41,9 @@
       <aside class="sidebar glass-panel">
         <div class="brand">
           <div class="brand-mark">F</div>
-          <div><strong>Formly</strong><span>PRIVATE AUTOMATION</span></div>
+          <div><strong>Formly</strong><span>AI FORM AGENT</span></div>
         </div>
-        <div class="nav-label">WORKSPACE</div>
+        <div class="nav-label">AI WORKSPACE</div>
         <nav>
           <button class="nav active" data-page="dashboard">
             <span class="nav-icon"
@@ -52,7 +52,7 @@
                 <rect x="14" y="3" width="7" height="7" rx="1.5" />
                 <rect x="3" y="14" width="7" height="7" rx="1.5" />
                 <rect x="14" y="14" width="7" height="7" rx="1.5" /></svg></span
-            ><span>Command Center</span></button
+            ><span>Agent Command</span></button
           ><button class="nav" data-page="profile">
             <span class="nav-icon"
               ><svg viewBox="0 0 24 24" aria-hidden="true">
@@ -63,7 +63,7 @@
             <span class="nav-icon"
               ><svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M13 2 4 13h6l-1 9 9-12h-6l1-8Z" /></svg></span
-            ><span>Smart Autofill</span></button
+            ><span>AI Autofill</span></button
           ><button class="nav" data-page="history">
             <span class="nav-icon"
               ><svg viewBox="0 0 24 24" aria-hidden="true">
@@ -116,6 +116,7 @@
             <div class="eyebrow">FORMLY AI WORKSPACE</div>
             <h1 id="pageTitle">Agent Command Center</h1>
           </div>
+          <div class="ai-status-badge"><span class="ai-pulse"></span><span>AGENT ONLINE</span></div>
           <div class="top-actions">
             <label class="theme-toggle" title="Toggle dark mode">
               <input id="themeToggle" type="checkbox" />
@@ -132,7 +133,7 @@
           </div>
         </header>
 
-        <section id="dashboard" class="page active">
+        <section id="dashboard" class="page active" data-agent-view="command">
           <div class="dashboard-hero glass-panel">
             <div class="hero-main">
               <div class="overline">
@@ -201,7 +202,7 @@
           </div>
           <div class="dashboard-grid">
             <article class="glass-panel action-card">
-              <div class="card-kicker">AGENT INPUT</div>
+              <div class="card-kicker">AGENT INPUT · FIELD INTELLIGENCE</div>
               <h3>Give the agent a form</h3>
               <p>
                 Paste a form link and the AI agent will analyze the page, identify fields, and prepare a profile-to-form mapping.
@@ -222,7 +223,7 @@
               </div>
             </article>
             <article class="glass-panel vault-card">
-              <div class="card-kicker">AI PROFILE MEMORY</div>
+              <div class="card-kicker">AI PROFILE MEMORY · PERSONAL CONTEXT</div>
               <h3>Everything in one place</h3>
               <p>
                 Personal, education, professional, documents, preferences and
@@ -248,7 +249,7 @@
           </div>
         <section class="glass-panel agent-flow-panel">
           <div class="agent-flow-head">
-            <div><div class="card-kicker">AGENT PIPELINE</div><h3>How Formly thinks</h3><p>The interface mirrors the agent workflow without changing your existing functionality.</p></div>
+            <div><div class="card-kicker">AGENT PIPELINE · DECISION FLOW</div><h3>How Formly thinks</h3><p>The interface mirrors the agent workflow without changing your existing functionality.</p></div>
             <span class="agent-status"><i></i> AGENT READY</span>
           </div>
           <div class="agent-flow">
@@ -259,10 +260,10 @@
           </div>
         </section>
         </section>
-        <section id="profile" class="page">
+        <section id="profile" class="page" data-agent-view="memory">
           <div class="section-title">
             <div>
-              <div class="eyebrow">PRIVATE DATA VAULT</div>
+              <div class="eyebrow">AI MEMORY · PRIVATE DATA VAULT</div>
               <h2>My Profile</h2>
               <p>
                 Build one complete profile that Formly can map to supported
@@ -1329,10 +1330,10 @@
             </div>
           </div>
         </section>
-        <section id="autofill" class="page">
+        <section id="autofill" class="page" data-agent-view="execution">
           <div class="section-title">
             <div>
-              <div class="eyebrow">FORM AUTOMATION</div>
+              <div class="eyebrow">AGENTIC AI · FORM AUTOMATION</div>
               <h2>Smart Autofill</h2>
               <p>
                 Analyze a form, inspect the proposed mapping, then open it with
@@ -1428,10 +1429,10 @@
             </aside>
           </div>
         </section>
-        <section id="history" class="page">
+        <section id="history" class="page" data-agent-view="telemetry">
           <div class="section-title">
             <div>
-              <div class="eyebrow">ACTIVITY LOG</div>
+              <div class="eyebrow">AGENT TELEMETRY · ACTIVITY LOG</div>
               <h2>Autofill History</h2>
               <p>
                 Review previous local autofill sessions and their matching
@@ -1456,10 +1457,10 @@
             </div>
           </div>
         </section>
-        <section id="extension" class="page">
+        <section id="extension" class="page" data-agent-view="execution-layer">
           <div class="section-title">
             <div>
-              <div class="eyebrow">BROWSER EXTENSION</div>
+              <div class="eyebrow">AGENT EXECUTION LAYER · BROWSER EXTENSION</div>
               <h2>Formly Extension</h2>
               <p>Download and install the Formly Autofill extension in Chrome.</p>
             </div>
@@ -1525,10 +1526,10 @@
             </div>
           </section>
         </section>
-        <section id="settings" class="page">
+        <section id="settings" class="page" data-agent-view="control">
           <div class="section-title">
             <div>
-              <div class="eyebrow">CONTROL CENTER</div>
+              <div class="eyebrow">AGENT CONTROL · SYSTEM SETTINGS</div>
               <h2>Settings</h2>
               <p>Keep Formly local, predictable and under your control.</p>
             </div>
