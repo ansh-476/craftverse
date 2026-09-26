@@ -9,7 +9,7 @@
   ],
   "host_permissions": [
     "<all_urls>",
-    "http://localhost:3000/*"
+    "https://formly-c2wk.onrender.com/*"
   ],
   "action": {
     "default_popup": "popup.html",

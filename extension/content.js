@@ -1,5 +1,5 @@
 (function () {
-  const API = 'http://localhost:3000';
+  const API = 'https://formly-c2wk.onrender.com';
   const isFormly = location.origin === API;
 
   // Formly page: keep the extension's auth token synchronized with the

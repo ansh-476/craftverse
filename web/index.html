@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="theme-color" content="#080a12" />
-    <title>Formly — Smart Autofill</title>
+    <title>Formly — AI Form Agent</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +16,7 @@
   <body>
     <section id="authScreen" class="auth-screen">
       <div class="auth-shell">
-        <div class="auth-brand"><div class="brand-mark">F</div><div><strong>Formly</strong><span>PRIVATE AUTOMATION</span></div></div>
+        <div class="auth-brand"><div class="brand-mark">F</div><div><strong>Formly</strong><span>AI FORM AGENT</span></div></div>
         <div class="auth-card glass-panel">
           <div class="auth-kicker">SECURE PROFILE VAULT</div>
           <h1 id="authTitle">Welcome back</h1>
@@ -41,7 +41,7 @@
       <aside class="sidebar glass-panel">
         <div class="brand">
           <div class="brand-mark">F</div>
-          <div><strong>Formly</strong><span>PRIVATE AUTOMATION</span></div>
+          <div><strong>Formly</strong><span>AI FORM AGENT</span></div>
         </div>
         <div class="nav-label">WORKSPACE</div>
         <nav>
@@ -63,7 +63,7 @@
             <span class="nav-icon"
               ><svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M13 2 4 13h6l-1 9 9-12h-6l1-8Z" /></svg></span
-            ><span>Smart Autofill</span></button
+            ><span>AI Autofill Agent</span></button
           ><button class="nav" data-page="history">
             <span class="nav-icon"
               ><svg viewBox="0 0 24 24" aria-hidden="true">
@@ -131,17 +131,15 @@
           <div class="dashboard-hero glass-panel">
             <div class="hero-main">
               <div class="overline">
-                <span class="live-dot"></span> PRIVATE AUTOMATION WORKSPACE
+                <span class="live-dot"></span> AI FORM AGENT WORKSPACE
               </div>
-              <h2>One profile.<br /><em>Every form.</em></h2>
+              <h2>Your profile.<br /><em>Every form.</em></h2>
               <p>
-                Formly turns your personal information into a reusable,
-                local-first autofill system. Analyze a form, review the mapping,
-                and fill only what you approve.
+                Formly is an AI-powered form agent that understands form fields, maps them to your profile, and executes autofill through your browser extension — with you in control.
               </p>
               <div class="hero-actions">
                 <button class="primary" onclick="showPage('autofill')">
-                  Open Smart Autofill
+                  Launch AI Autofill
                   <svg viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M5 12h13" />
                     <path d="m13 6 6 6-6 6" />
@@ -156,24 +154,21 @@
                   ><svg viewBox="0 0 24 24" aria-hidden="true">
                     <rect x="5" y="10" width="14" height="10" rx="2" />
                     <path d="M8 10V7a4 4 0 0 1 8 0v3" /></svg></span
-                ><b>Local vault</b><span class="separator"></span
-                ><span>Account-isolated profile vault</span>
+                ><b>AI agent ready</b><span class="separator"></span><span>Analyze · Map · Execute</span>
               </div>
             </div>
             <div class="hero-orbit" aria-hidden="true">
               <div class="orbit orbit-a"></div>
               <div class="orbit orbit-b"></div>
-              <div class="core"><span>CV</span><small>VAULT</small></div>
-              <div class="orbit-chip chip-a"><b>99%</b><span>match</span></div>
-              <div class="orbit-chip chip-b"><b>11</b><span>fields</span></div>
-              <div class="orbit-chip chip-c">
-                <b>LOCAL</b><span>storage</span>
-              </div>
+              <div class="core"><span>AI</span><small>AGENT</small></div>
+              <div class="orbit-chip chip-a"><b>AI</b><span>field scan</span></div>
+              <div class="orbit-chip chip-b"><b>MAP</b><span>profile data</span></div>
+              <div class="orbit-chip chip-c"><b>RUN</b><span>autofill agent</span></div>
             </div>
           </div>
           <div class="metric-grid">
             <article class="metric-card accent">
-              <div class="metric-label">Profile completion</div>
+              <div class="metric-label">Agent profile readiness</div>
               <div class="metric-value" id="completion">0%</div>
               <div class="metric-bar"><i id="completionBar"></i></div>
               <div class="metric-foot">
@@ -181,19 +176,19 @@
               </div>
             </article>
             <article class="metric-card">
-              <div class="metric-label">Fields ready</div>
+              <div class="metric-label">Fields understood</div>
               <div class="metric-value">100+</div>
-              <div class="metric-foot">Profile slots available</div>
+              <div class="metric-foot">Reusable profile attributes</div>
             </article>
             <article class="metric-card">
-              <div class="metric-label">Forms filled</div>
+              <div class="metric-label">Agent runs</div>
               <div class="metric-value">12</div>
-              <div class="metric-foot">Across this workspace</div>
+              <div class="metric-foot">Autofill sessions</div>
             </article>
             <article class="metric-card">
-              <div class="metric-label">Time saved</div>
+              <div class="metric-label">Manual work avoided</div>
               <div class="metric-value">48m</div>
-              <div class="metric-foot">Estimated manual work avoided</div>
+              <div class="metric-foot">Estimated time saved</div>
             </article>
           </div>
           <div class="dashboard-grid">
@@ -201,7 +196,7 @@
               <div class="card-kicker">QUICK ACTION</div>
               <h3>Start with a form URL</h3>
               <p>
-                Paste a form link and Formly will prepare a field mapping.
+                Give the agent a form URL. Formly analyzes the structure and prepares a profile-to-field mapping.
               </p>
               <div class="smart-input">
                 <span class="input-icon"
@@ -220,18 +215,17 @@
             </article>
             <article class="glass-panel vault-card">
               <div class="card-kicker">PROFILE VAULT</div>
-              <h3>Everything in one place</h3>
+              <h3>Agent memory</h3>
               <p>
-                Personal, education, professional, documents, preferences and
-                custom fields.
+                One structured profile gives the agent context across personal, education, professional and custom fields.
               </p>
               <div class="vault-progress">
                 <div class="vault-ring">
                   <span id="dashboardProfilePct">0%</span>
                 </div>
                 <div>
-                  <b>Profile strength</b
-                  ><small>Stored locally on this machine.</small>
+                  <b>Agent context</b
+                  ><small>Account-isolated profile data.</small>
                 </div>
                 <button class="text-button" onclick="showPage('profile')">
                   Open
@@ -264,7 +258,7 @@
                 <div class="profile-score">
                   <div class="score-ring"><span id="profilePct">0%</span></div>
                   <div>
-                    <b>Profile strength</b
+                    <b>Agent context</b
                     ><small>Complete more fields for richer matches.</small>
                   </div>
                 </div>
@@ -1317,11 +1311,10 @@
         <section id="autofill" class="page">
           <div class="section-title">
             <div>
-              <div class="eyebrow">FORM AUTOMATION</div>
-              <h2>Smart Autofill</h2>
+              <div class="eyebrow">AGENTIC FORM AUTOMATION</div>
+              <h2>AI Autofill Agent</h2>
               <p>
-                Analyze a form, inspect the proposed mapping, then open it with
-                your local profile ready.
+                Let the agent inspect the form, propose field mappings, and open it with your profile ready.
               </p>
             </div>
             <button class="secondary" onclick="openSample()">
@@ -1338,11 +1331,10 @@
                 <div class="analyzer-top">
                   <div class="step-mark">01</div>
                   <div>
-                    <div class="card-kicker">FORM CONNECTION</div>
-                    <h3>Paste your form link</h3>
+                    <div class="card-kicker">AGENT INPUT</div>
+                    <h3>Give your agent a form</h3>
                     <p>
-                      Google Forms and supported HTML forms can be analyzed
-                      before anything is filled.
+                      The agent reads supported form structures before any data is entered.
                     </p>
                   </div>
                   <div class="secure-badge">
@@ -1376,14 +1368,14 @@
               </article>
             </div>
             <aside class="glass-panel process-card">
-              <div class="card-kicker">WORKFLOW</div>
-              <h3>How Formly works</h3>
+              <div class="card-kicker">AGENT LOOP</div>
+              <h3>How the AI agent works</h3>
               <div class="workflow-step">
                 <span>01</span>
                 <div>
                   <b>Analyze</b
                   ><small
-                    >Read the form structure and prepare likely matches.</small
+                    >Detect field labels, types and context.</small
                   >
                 </div>
               </div>
@@ -1391,7 +1383,7 @@
                 <span>02</span>
                 <div>
                   <b>Review</b
-                  ><small>See exactly which profile values are proposed.</small>
+                  ><small>Map fields to the most relevant profile values.</small>
                 </div>
               </div>
               <div class="workflow-step">
@@ -1399,15 +1391,14 @@
                 <div>
                   <b>Open & fill</b
                   ><small
-                    >The extension applies the approved local session.</small
+                    >Execute the approved mapping in the browser.</small
                   >
                 </div>
               </div>
               <div class="privacy-callout">
-                <strong>Private by default</strong>
+                <strong>Human-controlled automation</strong>
                 <p>
-                  Your profile stays on your computer. Sensitive sections remain
-                  under your control.
+                  The agent proposes actions first. You decide what gets filled, especially sensitive information.
                 </p>
               </div>
             </aside>
@@ -1430,7 +1421,7 @@
                 <b>Recent sessions</b
                 ><small>Stored in your private Formly account.</small>
               </div>
-              <span class="history-status">LOCAL</span>
+              <span class="history-status">AI READY</span>
             </div>
             <div class="history-table">
               <div class="history-row head">
@@ -1452,7 +1443,7 @@
           <div class="settings-grid">
             <article class="glass-panel setup-card">
               <div class="settings-icon">CV</div>
-              <div class="card-kicker">LOCAL VAULT</div>
+              <div class="card-kicker">AI READY VAULT</div>
               <h3>Profile storage</h3>
               <p>
                 Your detailed profile is stored separately for your account on the Formly server.
@@ -1463,7 +1454,7 @@
             </article>
             <article class="glass-panel setup-card">
               <div class="settings-icon">EXT</div>
-              <div class="card-kicker">BROWSER EXTENSION</div>
+              <div class="card-kicker">AGENT BROWSER BRIDGE</div>
               <h3>Connect Chrome</h3>
               <ol>
                 <li>Open <b>chrome://extensions</b></li>

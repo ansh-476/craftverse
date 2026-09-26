@@ -1,4 +1,4 @@
-const API = 'http://localhost:3000';
+const API = 'https://formly-c2wk.onrender.com';
 const AUTH_KEY = 'formly_auth_token';
 const ACTIVE_KEY = 'formly_active_tabs';
 
